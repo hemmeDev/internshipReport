@@ -1,3 +1,6 @@
+@php
+$backzzground = get_field('background-text');
+@endphp
 <section class="hero">
   <div class="hero__background">
     <div class="container">

@@ -9,3 +9,4 @@ yarn-error.log
 resources/assets/config-local.json
 yarn.lock
 composer.lock
+resources/views/template-home.blade.php

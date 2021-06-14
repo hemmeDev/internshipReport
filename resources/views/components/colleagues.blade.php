@@ -1,3 +1,6 @@
+@php
+$slider = get_field('slider');
+@endphp
 <section class="colleagues">
   <div class="container">
     <div class="row">
@@ -9,15 +12,11 @@
       <div class="col-11">
         <div class="swiper-container mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              @include('components.swiper-slide')
-            </div>
-            <div class="swiper-slide">
-              @include('components.swiper-slide')
-            </div>
-            <div class="swiper-slide">
-              @include('components.swiper-slide')
-            </div>
+            @foreach($slider as $slide)
+              <div class="swiper-slide">
+                @include('components.swiper-slide')
+              </div>
+            @endforeach
           </div>
           <div class="swiper-button-next">
             <div class="next-btn"></div>

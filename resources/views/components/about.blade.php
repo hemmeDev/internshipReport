@@ -1,23 +1,26 @@
+@php
+$about =- get_field('about');
+@endphp
 <section class="about">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="about__title">about vazquez</h1>
+        <h1 class="about__title">{!! $about['title']!!}about vazquez</h1>
       </div>
     </div>
     <div class="row">
       <div class="col-8 min-offset">
         <a class="about__img" href="/about-vazquez/">
-          <img loading="lazy" src="/wp-content/uploads/2021/06/Esstadio_vazquez-1152x1536.jpg" alt="">
+          <img loading="lazy" src="{!! $about['img']!!}" alt="">
         </a>
       </div>
       <div class="col">
-        <p class="about__text">Vazquez is a digital agency focused on creating fans for your brand. We work with a 4
+        <p class="about__text">{!! $about['text']!!}Vazquez is a digital agency focused on creating fans for your brand. We work with a 4
           line strategy called
           SOOM to score at each point of the field to make a difference and creating fans of your brand.</p>
         <a href="#" class="btn btn__primary">
           <div class="btn__inner">
-            <span class="btn__text btn__text--primary">see more</span>
+            <span class="btn__text btn__text--primary">{!! $about['btn']!!}see more</span>
             <span class="btn__arrow btn__arrow--primary"></span>
           </div>
         </a>
