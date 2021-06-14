@@ -1,0 +1,17 @@
+body {
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+.main {
+  color: $white;
+  width: 100%;
+  background-image: url("/wp-content/uploads/2021/06/noise_background_2.0.png");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $gold;
+}

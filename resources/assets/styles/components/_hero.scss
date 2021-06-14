@@ -1,0 +1,70 @@
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+
+  &__background {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+
+    h2 {
+      font-size: 324px;
+      opacity: 0.1;
+      line-height: 1;
+      text-align: right;
+      font-family: GoldenGate-Gothic, sans-serif;
+
+      span {
+        line-height: inherit;
+        font-size: 342px;
+        font-family: inherit;
+      }
+    }
+  }
+
+  &__image {
+    height: 777px;
+  }
+
+  &__title {
+    color: $gold;
+    font-size: 112px;
+    text-align: center;
+    line-height: 1;
+    position: absolute;
+    bottom: 120px;
+    font-family: GoldenGate-Gothic, sans-serif;
+
+    &--border {
+      -webkit-text-stroke: 2px $gold;
+      -webkit-text-stroke-width: 2px;
+      color: transparent;
+      font-size: inherit;
+      text-align: inherit;
+      line-height: inherit;
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    left: 0;
+    bottom: 160px;
+    transform: rotate(-90deg);
+    color: $white;
+
+    p::before {
+      content: "";
+      background-image: url(/wp-content/uploads/2021/06/arrow_white.svg);
+      background-size: contain;
+      height: 33px;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: -50px;
+      top: 5px;
+      width: 32px;
+      transform: rotate(90deg);
+    }
+  }
+}

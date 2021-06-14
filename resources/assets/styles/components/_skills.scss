@@ -1,0 +1,17 @@
+.skills {
+  background: rgb(206, 184, 111);
+  background: radial-gradient(circle, rgba(206, 184, 111, 1) 0%, rgba(170, 150, 88, 1) 100%);
+  padding: 160px 0;
+
+  &__title {
+    font-family: GoldenGate-Gothic, sans-serif;
+    font-size: 56px;
+    padding: 56px 0;
+  }
+
+  &__text {
+    color: $white;
+    font-size: 16px;
+    padding: 56px 0;
+  }
+}

@@ -1,0 +1,47 @@
+.case-one {
+  padding: 333px 0;
+  position: relative;
+  justify-content: center;
+  display: flex;
+
+  &__background {
+    position: absolute;
+    bottom: 160px;
+    opacity: 0.1;
+
+    h2 {
+      font-size: 300px;
+      font-family: GoldenGate-Gothic, sans-serif;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-family: GoldenGate-Gothic, sans-serif;
+    font-size: 56px;
+    padding: 40px 0 0 0;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+  &__img {
+    height: 642px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+    margin-left: 16.66667%;
+    overflow: hidden;
+
+    img {
+      transition: all 0.2s ease-in-out;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
